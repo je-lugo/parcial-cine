@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">🎬 Cine</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <p>Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Principal 123, Ciudad</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>Teléfono de ejemplo</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>email@ejemplo.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lunes - Domingo: 10:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>Acerca de Nosotros</h2>
+                <div class="about-content">
+                    <p>
+                        Este complejo cinematográfico tiene como misión llevar el mejor 
+                        entretenimiento cinematográfico a la comunidad. Se ha enfocado 
+                        en crear una experiencia única que combine tecnología de 
+                        punta con un servicio cálido y personalizado.
+                    </p>
+                    <p>
+                        Nuestro equipo está compuesto por apasionados del cine que trabajan día a día 
+                        para ofrecerte una cartelera diversa y de calidad. Creemos que el cine es más 
+                        que solo entretenimiento; es un arte que une a las personas y crea momentos 
+                        inolvidables.
+                    </p>
+                    <p>
+                        Estamos comprometidos con la excelencia en cada aspecto de nuestro servicio, 
+                        desde la calidad de nuestras proyecciones hasta la atención al cliente. Tu 
+                        satisfacción es nuestra prioridad, y trabajamos constantemente para superar 
+                        tus expectativas.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>¡Atención!, este es un proyecto universitario y no tiene ningún tipo de relación con el cine real. Los datos son ficticios.</p>
+
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
